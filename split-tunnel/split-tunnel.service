@@ -1,0 +1,12 @@
+[Unit]
+Description=Split Tunnel Routing Service
+After=network-online.target awg-quick@wg0.service docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/bit/split-tunnel.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
