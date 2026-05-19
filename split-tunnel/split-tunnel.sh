@@ -8,10 +8,10 @@ set -euo pipefail
 # - SSH safety: inbound ssh on ens3 gets mark+connmark so replies stay on WAN
 # - DNS: systemd-resolved prefers wg0 (DefaultRoute on wg0 only)
 
-WAN_IF="eth0"
-WAN_GW="10.131.0.1"
+WAN_IF="[REPLACEME]"
+WAN_GW="[REPLACEME]"
 WG_IF="wg0"
-WG_ENDPOINT="188.253.22.148"
+WG_ENDPOINT="[REPLACEME]"
 
 TABLE_NAME="vpn"
 TABLE_ID="200"
