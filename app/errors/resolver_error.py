@@ -1,0 +1,2 @@
+class ResolverError(RuntimeError):
+    pass
